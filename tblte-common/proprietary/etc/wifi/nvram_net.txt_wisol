@@ -1,4 +1,5 @@
 #BCM4358 WLCSP PCIe and BT AoA module, 2 antenna
+#2014.08.27, YMP04A, TB, Bual band ANT1=ANT2=+3.5dB
 NVRAMRev=$Rev: 373428 $
 sromrev=11
 boardrev=0x1101
@@ -10,8 +11,8 @@ boardflags2=0x00002000
 boardflags3=0x48000109
 #boardnum=57410
 macaddr=00:90:4c:16:70:01
-ccode=GB
-regrev=6
+ccode=CN
+regrev=38
 antswitch=0
 pdgain5g=4
 pdgain2g=4
@@ -70,9 +71,9 @@ pa2ga1=0xff7d,0x163b,0xfd52
 pa5ga0=0xff3b,0x14f9,0xfd3a,0xff32,0x13f7,0xfd53,0xff3f,0x148f,0xfd4c,0xff4b,0x1552,0xfd3c
 pa5ga1=0xff51,0x1677,0xfd22,0xff3d,0x14f7,0xfd3d,0xff36,0x13ff,0xfd53,0xff44,0x14dc,0xfd43
 maxp2ga0=74
-maxp5ga0=73,70,70,72
+maxp5ga0=73,73,73,72
 maxp2ga1=74
-maxp5ga1=73,73,72,72
+maxp5ga1=73,73,73,72
 subband5gver=0x4
 pdoffsetcckma0=0x4
 pdoffsetcckma1=0x4
@@ -126,13 +127,11 @@ epsdelta2g0=0
 epsdelta2g1=0
 papdwar=4
 cckdigfilttype=2
-cck_onecore_tx=1
-tssisleep_en=0x1f
 ## SWCTRLMAP using AN29225K and AN29226K
 swctrlmap_5g=0x020c020c,0x05a40000,0x04240000,0x000000,0x0f8
 swctrlmap_2g=0x10211021,0x28510000,0x08110000,0x020202,0x0ff
 ## Enabling OOB signal - needed for final board
-#host_wake_opt=0
+host_wake_opt=0
 # For Sensor Hub UART
 #muxenab=0x4
 btc_params82=0x0

@@ -1,4 +1,5 @@
 #BCM4358 WLCSP PCIe and BT AoA module, 2 antenna
+#2014.09.03, YMP04A, TB
 NVRAMRev=$Rev: 373428 $
 sromrev=11
 boardrev=0x1101
@@ -126,8 +127,7 @@ epsdelta2g0=0
 epsdelta2g1=0
 papdwar=4
 cckdigfilttype=2
-cck_onecore_tx=1
-tssisleep_en=0x1f
+#cck_onecore_tx=1
 ## SWCTRLMAP using AN29225K and AN29226K
 swctrlmap_5g=0x020c020c,0x05a40000,0x04240000,0x000000,0x0f8
 swctrlmap_2g=0x10211021,0x28510000,0x08110000,0x020202,0x0ff
@@ -136,7 +136,6 @@ host_wake_opt=0
 # For Sensor Hub UART
 #muxenab=0x4
 btc_params82=0x0
-btc_params51=0x409f
 # ###########  BTC Dynctl profile params  ############
 # flags:bit0 - dynctl enabled, bit1 dynamic desense, bit2 dynamic mode
 btcdyn_flags=0x7
@@ -162,3 +161,4 @@ rpcal5gb2=0x01
 rpcal5gb3=0xf7
 #dynamicsarctrl_2g=0xffb0
 #dynamicsarctrl_5g=0xffa0
+host_wake_opt=0
